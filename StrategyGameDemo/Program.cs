@@ -6,7 +6,7 @@ internal class Program
 {
     public static void Main(string[] args)
     {
-        Runner().Build();
+        Runner().Build().Services.GetRequiredService<Config>().RunConsole();
     }
 
     private static HostApplicationBuilder Runner()
